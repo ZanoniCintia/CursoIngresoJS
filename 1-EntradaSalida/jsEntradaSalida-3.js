@@ -4,9 +4,9 @@ function mostrar()
 {
 	var nombre;
 
-	nombre=getElementById('elNombre').value;
-	 Alert (nombre);
-	 
+	nombre = elNombre.value;
+	 alert (nombre);
+
 }
 
 
