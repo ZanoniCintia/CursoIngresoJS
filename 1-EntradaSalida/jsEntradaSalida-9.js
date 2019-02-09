@@ -9,6 +9,7 @@ function mostrarAumento()
 	var aumento;
 
 	ingresesueldo=sueldo.value;
+	//una vez validado el id uso siempre el nombre de la variable
 	
 	ingresesueldo=parseInt(ingresesueldo);
 	
