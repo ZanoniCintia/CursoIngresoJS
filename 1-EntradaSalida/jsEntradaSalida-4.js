@@ -3,10 +3,21 @@
 	y lo muestro por 'getElementById' al presionar el botón 'mostrar'
 */
 function mostrar()
-{ var nombre;
+{ 
+var nombre;
 
-	nombre=prompt("por favor ingrese un dato");
-	//elNombre.value=nombre;
+nombre=prompt("ingrese nombre").value;
+
 document.getElementById('elNombre').value=nombre;
+
+
+
+
+
+
+
+
+
+
 }
 

@@ -4,74 +4,69 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var primerNumero;
-	var segundoNumero;
-	var resultado;
+	var primernumero;
+    var segundonumero;
+    var resultado;
 
-	primerNumero=numeroUno.value;
-    segundoNumero=numeroDos.value;
-    
-    primerNumero=parseInt(primerNumero);
-    segundoNumero=parseInt(segundoNumero);
-    
-    resultado=primerNumero+segundoNumero;
+    primernumero= numeroUno.value;
+    segundonumero= numeroDos.value;
 
-    alert("resultado es:" +resultado) ;
+    primernumero=parseInt(primernumero);
+    segundonumero=parseInt(segundonumero);
+
+    resultado=primernumero+segundonumero;
+
+    alert(+resultado);
 
 }
 
-function restar()
+function restar () 
+
 {
-	var primerNumero;
-	var segundoNumero;
-	var resultado;
+    var primernumero;
+    var segundonumero;
+    var resultado;
 
-	primerNumero=numeroUno.value;
-    segundoNumero=numeroDos.value;
-    
-    primerNumero=(primerNumero);
-    segundoNumero=(segundoNumero);
-    
-    resultado=primerNumero-segundoNumero;
+    primernumero=numeroUno.value;
+    segundonumero=numeroDos.value;
 
-    alert("resultado es:"+resultado) ;
+    resultado= primernumero-segundonumero;
+
+    alert(+resultado);
+    
 }
+
 
 function multiplicar()
-{ 
-	var primerNumero;
-	var segundoNumero;
-	var resultado;
+{
+var primernumero;
+var segundonumero;
+var resultado;
 
-	primerNumero=numeroUno.value;
-    segundoNumero=numeroDos.value;
-    
-    primerNumero=(primerNumero);
-    segundoNumero=(segundoNumero);
-    
-    resultado=primerNumero*segundoNumero;
+primernumero= numeroUno.value;
+segundonumero= numeroDos.value;
 
-    alert("resultado es:" +resultado) ;
-}
+resultado= primernumero*segundonumero;
+
+alert(+resultado); 
+	}
 	
 
 
 function dividir()
 {
+    var primernumero;
+    var segundonumero;
+    var resultado;
+
+    primernumero= numeroUno.value;
+    segundonumero= numeroDos.value;
+
+    resultado= primernumero/segundonumero;
+
+    alert(+resultado);
 	
-	var primerNumero;
-	var segundoNumero;
-	var resultado;
-
-	primerNumero=numeroUno.value;
-    segundoNumero=numeroDos.value;
-    
-    primerNumero=(primerNumero);
-    segundoNumero=(segundoNumero);
-    
-    resultado=primerNumero/segundoNumero;
-
-    alert("resultado es:" +resultado) ;
+	
 }
 
 
