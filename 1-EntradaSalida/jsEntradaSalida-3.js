@@ -4,8 +4,11 @@ function mostrar()
 {
 	var nombre;
 
-	nombre = elNombre.value;
-	 alert (nombre);
+	nombre=elNombre.value;
+
+	alert(nombre);
+
+
 
 }
 
