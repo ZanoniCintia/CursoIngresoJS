@@ -5,22 +5,29 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 { 
  var ingresesueldo;
-	var porcentaje;
-	var aumento;
+ var porcentaje;
+ var aumento;
 
-	ingresesueldo=sueldo.value;
-	//una vez validado el id uso siempre el nombre de la variable
-	
-	ingresesueldo=parseInt(ingresesueldo);
-	
+ ingresesueldo= sueldo.value;
+ 
+ 
+ 
 
-	porcentaje=ingresesueldo * 0.10;
+ ingresesueldo=parseInt(ingresesueldo);
 
-	// pocerntaje= sueldo*1.20
+ porcentaje= ingresesueldo*0.1;
+ aumento= ingresesueldo+porcentaje;
 
-	aumento= ingresesueldo+porcentaje;
+ 
+ document.getElementById('resultado').value=aumento; 
 
-document.getElementById('resultado').value=aumento;
+ 
+
+
+
+ 
+
+
 
 
     

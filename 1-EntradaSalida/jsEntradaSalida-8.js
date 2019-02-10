@@ -8,15 +8,15 @@ function SacarResto()
 	var divisor;
 	var resto;
 
-	dividendo=numeroDividendo.value;
-	divisor=numeroDivisor.value;
+	dividendo= numeroDividendo.value;
+	divisor= numeroDivisor.value;
 
-	numeroDividendo=parseInt(numeroDividendo);
-	numeroDivisor=parseInt(numeroDivisor);
+	dividendo= parseInt(dividendo);
+	divisor= parseInt(divisor);
 
-	resto=dividendo%divisor;
+	resto= dividendo%divisor;
 
-	alert("resto:" +resto);
+	alert("resto: "+resto);
 	
 
 
