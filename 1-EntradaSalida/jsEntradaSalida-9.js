@@ -18,8 +18,8 @@ function mostrarAumento()
  porcentaje= ingresesueldo*0.1;
  aumento= ingresesueldo+porcentaje;
 
- 
- document.getElementById('resultado').value=aumento; 
+
+ resultado.value=aumento; 
 
  
 
