@@ -1,19 +1,20 @@
 function mostrar()
 //Genero el número RANDOM entre 1 y 10 
-		{ var boton;
-		boton=FormIngreso.value;
+    { var boton;
+	boton=FormIngreso.value;
 
-		boton=Math.floor((Math.random() * 10) + 1);
-		console.log(boton);
+	boton=Math.floor((Math.random() * 10) + 1);
+	console.log(boton);
 
-		if(boton>8)	
-			{ alert("EXCELENTE");
-	     }
+	if(boton>8)	
+	{ alert("EXCELENTE");
+		     }
 	else
-		{if(boton>4 )
-			alert("aprobo");}
-	
-	if(boton<=4)
+	if(boton>4 )
+	{alert("aprobo");}
+
+		
+	else
 	{alert("vamos,la proxima se puede");}		
 
 
