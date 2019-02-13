@@ -2,22 +2,26 @@
 function mostrar()
 {
 
-  var ancho;
-  var largo;
-  var lados;
-  var perimetro;
+  var ingreseNombre;
+  var segundoNombre;
+  var ingreseEdad;
+  var ingreseEdadDos;
+  var suma;
   
 
-  ancho=prompt("ingrese ancho");
-  largo=prompt("ingrese largo");
+  ingreseNombre=prompt("ingrese su nombre");
+  ingreseEdad=prompt("ingrese edad");
+  segundoNombre=prompt("ingrese un segundo nombre");
+  ingreseEdadDos=prompt("ingrese edad");
 
-  ancho= parseInt(ancho);
-  largo= parseInt(largo);
+  ingreseEdad=parseInt(ingreseEdad);
+  ingreseEdadDos=parseInt(ingreseEdadDos);
 
-  lados=ancho+largo;
-  perimetro=lados*2;
+  suma=ingreseEdad+ingreseEdadDos;
 
-  alert("perimetro: "+perimetro);
+
+  alert("Ustedes son "+ingreseNombre+ " y " +segundoNombre+ "sus edades son "
+    +segundaEdad+ " y " +ingreseEdadDos+ " la suma de sus edades es "+suma);
 
 
   
