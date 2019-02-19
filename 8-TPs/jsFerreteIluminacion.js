@@ -28,25 +28,39 @@ function CalcularPrecio ()
 	 	//PrecioDescuento=precioDescuento.value;
 		PrecioDescuento=parseInt(PrecioDescuento);
 	 	//alert("Hola");
+	 	switch(cantidad)
 
+	 	case 6:
+	 	     if(cantidad == "ArgentinaLuz")
+	 	     {
+	      	    Porcentaje = 0.5;
+	 	     }
+	 	 
+        case 5:
+
+            {    
+        	 if(cantidad==5)
+	 	   	
+	 	   	{ 
+	 			if(marca=="ArgentinaLuz")
+	 		
+	 		{
+	            Porcentaje = 0.4;
+	        }
+            }
+	     else
+	    	
 	 	
-
-	 	if(cantidad>=6){
-	      	Porcentaje = 0.5;
-	 	}else{
-	 	   	if(cantidad==5){ 
-	 			if(marca=="ArgentinaLuz"){
-	      			Porcentaje = 0.4;
-	 			}
-	    	}else{
-	      		Porcentaje = 0.3;
-	      	}
-	       	if(cantidad==4){
-	    		if(marca== "ArgentinaLuz" || marca== "FelipeLamparas"){         		
-	    			Porcentaje = 0.25; 
-	    		}else{
-	 				Porcentaje = 0.2;
-	    		}
+		{
+		      		Porcentaje = 0.3;
+		      	}
+	       		if(cantidad==4)
+	       		{
+		    		if(marca== "ArgentinaLuz" || marca== "FelipeLamparas"){         		
+		    			Porcentaje = 0.25; 
+		    		}else{
+		 				Porcentaje = 0.2;
+		    		}
 	    	}
 	 		if(cantidad== 3){
  				if(marca=="ArgentinaLuz"){
