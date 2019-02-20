@@ -17,6 +17,7 @@ function CalcularPrecio ()
 	 	var Porcentaje;
 	 	var Descuento;
 	 	var impuesto;
+	 	var total;
 	 	
 
 	 	cantidad=Cantidad.value;
@@ -26,67 +27,78 @@ function CalcularPrecio ()
 	 	Porcentaje=0;
 	 	Precio = 35;
 	 	//PrecioDescuento=precioDescuento.value;
-		PrecioDescuento=parseInt(PrecioDescuento);
+		
 	 	//alert("Hola");
-	 	switch(cantidad)
-
-	 	case 6:
-	 	     if(cantidad == "ArgentinaLuz")
-	 	     {
-	      	    Porcentaje = 0.5;
-	 	     }
-	 	 
-        case 5:
-
-            {    
-        	 if(cantidad==5)
-	 	   	
-	 	   	{ 
-	 			if(marca=="ArgentinaLuz")
-	 		
-	 		{
-	            Porcentaje = 0.4;
-	        }
-            }
-	     else
-	    	
 	 	
-		{
-		      		Porcentaje = 0.3;
-		      	}
-	       		if(cantidad==4)
-	       		{
-		    		if(marca== "ArgentinaLuz" || marca== "FelipeLamparas"){         		
-		    			Porcentaje = 0.25; 
-		    		}else{
-		 				Porcentaje = 0.2;
-		    		}
-	    	}
-	 		if(cantidad== 3){
- 				if(marca=="ArgentinaLuz"){
-	 				Porcentaje = 0.15;
-	 			}else{
-	 				if(marca=="FelipeLamparas"){
-	 					Porcentaje = 0.1;
-	 				}else{
-	 					Porcentaje = 0.05;
-	 				}
-	 			}
+	 	switch(cantidad)
+	 	{
+	 		case"6":
+			if(cantidad == marca)
+	 		{
+	 			porcentaje=0.5;
 	 		}
-	 	}
-	
+	 		break;
 
-	Descuento = Precio * Porcentaje;
-	PrecioDescuento = (Precio - Descuento) * cantidad;
-    //alert("PrecioDescuento=" + PrecioDescuento);
+	 		
+	 		case"5":
+			if(cantidad == "ArgentinaLuz")
+	 		{
+	 			porcentaje=0.4;
+	 		}
+	 		else{
+				porcentaje=0.3;
+	 		}
+			break;
+
+			
+			case"4":
+			if(marca=="ArgentinaLuz" || marca=="FelipeLamparas" )
+			{
+				porcentaje=0.25;
+			}
+			else{
+				porcentaje=0.20;
+			}
+			break;
 
 
-	if(PrecioDescuento>120){
-		impuesto = PrecioDescuento * 0.1;
-		PrecioDescuento = PrecioDescuento + impuesto;
-		alert("IIBB Usted pago " + impuesto);
-	}
+			/*case"3"
+			if(marca=="ArgentinaLuz")
+			{
+				porcentaje=0.15;
+			}
+			else{
+				if(marca=="FelipeLamparas")
+					{
+					porcentaje=0.10;
+					}
 
-	precioDescuento.value = PrecioDescuento;
+				}
+				else{
+					descuento=0.05;
+				}
+			break;	*/
+
+  		} 
+           
+  		Descuento = Precio * Porcentaje;
+		PrecioDescuento = (Precio - Descuento) * cantidad;
+
+
+
+         precioDescuento.value=precioDescuento;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
