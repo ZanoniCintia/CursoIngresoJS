@@ -11,16 +11,18 @@ switch(mesDelAño)
 		case "Marzo":
 		case "Abril":
 		case "Mayo":
-		case "junio":
+		case "Junio":
         mensaje="Falta para el invierno.";
         break;
 
-        case "julio":
+        case "Julio":
         case "Agosto":
         mensaje="Abrigate que hace frio.";
         break;
+        
         default:
         mensaje="Ya pasamos el frio, ahora calor!!!"
+        break;
     }
 	
 	{   if(mensaje!="")

@@ -14,12 +14,11 @@ var planeta;
 
 	case"mercurio":
 	case"venus":
-	case"marte":
-	case"jupiter":
 	mensaje="aca hace mas calor";
 	break;
 
-
+	case"jupiter":
+	case"marte":
 	case"saturno":
 	case"urano":
 	case"neptuno":

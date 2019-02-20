@@ -8,7 +8,7 @@ function mostrar()
 	precio= prompt("ingrese precio");
 	porcentaje= prompt("ingrese porcentaje");
 
-	descuento= precio*porcentaje/100;
+	descuento= (precio*porcentaje)/100;
 	resultado= precio-descuento;
 
 
