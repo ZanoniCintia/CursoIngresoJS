@@ -3,6 +3,7 @@ function mostrar()
 	var mensaje="";
   
   hora=(laHora).value;
+ 
 
   switch(hora)
   { 
@@ -28,21 +29,18 @@ function mostrar()
 
   		default:
   		mensaje="es de noche";
-  		/*if(hora>=19 && hora<=24)
-  		{
-  			alert("a dormir");
-  		}*/
-
+  	
+  
 }
-	if(mensaje!="")
-	{
-		alert(mensaje);
-    }
-    if(hora>=19 && hora<=24)
-  		{
-  			alert("a dormir");
-  		}
-
-
+	 
+  
+  if(mensaje!="")
+	    {
+		    alert(mensaje);
+      }
+  if(hora>19 && hora<25)
+      {
+        alert("a dormir");
+      }
 
 }
