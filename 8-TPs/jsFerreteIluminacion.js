@@ -12,93 +12,20 @@ function CalcularPrecio ()
 {	 	
 	 	var cantidad;
 	 	var marca;
-	 	var PrecioDescuento;
-	 	var Precio;
-	 	var Porcentaje;
-	 	var Descuento;
-	 	var impuesto;
-	 	var total;
+	 	var brutoApagar;
+	 	var porcentaje=0;
 	 	
 
+	 	
 	 	cantidad=Cantidad.value;
 	 	marca = Marca.value;
+
 	 	Precio = parseInt(Precio);
 	 	cantidad=parseInt(cantidad);
-	 	Porcentaje=0;
-	 	Precio = 35;
-	 	//PrecioDescuento=precioDescuento.value;
-		
-	 	//alert("Hola");
-	 	
-	 	switch(cantidad)
-	 	{
-	 		case"6":
-			if(cantidad == marca)
-	 		{
-	 			porcentaje=0.5;
-	 		}
-	 		break;
 
-	 		
-	 		case"5":
-			if(cantidad == "ArgentinaLuz")
-	 		{
-	 			porcentaje=0.4;
-	 		}
-	 		else{
-				porcentaje=0.3;
-	 		}
-			break;
+	 	brutoApagar=cantidad*35;
 
-			
-			case"4":
-			if(marca=="ArgentinaLuz" || marca=="FelipeLamparas" )
-			{
-				porcentaje=0.25;
-			}
-			else{
-				porcentaje=0.20;
-			}
-			break;
-
-
-			/*case"3"
-			if(marca=="ArgentinaLuz")
-			{
-				porcentaje=0.15;
-			}
-			else{
-				if(marca=="FelipeLamparas")
-					{
-					porcentaje=0.10;
-					}
-
-				}
-				else{
-					descuento=0.05;
-				}
-			break;	*/
-
-  		} 
-           
-  		Descuento = Precio * Porcentaje;
-		PrecioDescuento = (Precio - Descuento) * cantidad;
-
-
-
-         precioDescuento.value=precioDescuento;
-
-
-
-
-
-
-
-
-
-
-
-
+if (true) {}
 
 
 }
