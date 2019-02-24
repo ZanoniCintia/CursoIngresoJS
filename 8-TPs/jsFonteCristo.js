@@ -8,6 +8,35 @@ d.	Se pedirán un número positivo y se mostrará si el número es un número pr
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
 function ComenzarIngreso () 
-{
+{   var Numeros;
+ 	var numero=0;
+ 	var NumerosPares=0;
+ 	var NumerosImpares=0;
+ 	
+ 	NumerosPares=parseInt(NumerosPares);
+ 	NumerosImpares=parseInt(NumerosImpares);
+ 	numero=document.getElementById('numero').value;
+ 	numero=parseInt(numero);
+
+ 	while(numero!=0)
+ 	{
+ 		if(numero % 2 ==0)
+ 		{
+ 			NumerosPares=NumerosPares+1;
+ 			alert(NumerosPares);
+ 		}
+ 		else
+ 		{
+ 			NumerosImpares=NumerosImpares+1;
+ 			alert(NumerosImpares);
+ 		}
+ 	}
+
+
+
+ 	
+
+
  	
 }
+

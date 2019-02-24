@@ -6,6 +6,7 @@ while(clave!="UTN750")
 {
 	alert("la clave es incorecta");
 	clave = prompt("Reingrese el número clave.");
+
 }
  alert("Bienvenidos al sistema");
 

@@ -25,10 +25,9 @@ function CalcularPrecio ()
 	precio=parseInt(precio);
 	total=parseInt(total);
 	porcentaje=parseInt(porcentaje);
-	
-	
 	precio=Cantidad*35;
 
+	
 	switch(Cantidad)
 	{
 		case 5:
@@ -75,31 +74,35 @@ function CalcularPrecio ()
 		default:
 		if(Cantidad>=6)
 		{
-			porcentaje=1.90;
+			porcentaje=0.50;
 		}
 
 		break;
 
 	}
 
-		
+	
+	
 
 	total=precio*porcentaje;
 	
 	
 	
-	//IIBB=parseInt(IIBB);
+	IIBB=parseInt(IIBB);
 	
 	
-	/*if(total>120)
+	if(total>120)
 	{
 		IIBB=total*0.10;
-        alert("”IIBB Usted pago :"+IIBB);
-	}*/
+        document.getElementById('precioDescuento').value=total+IIBB;
+        alert("”IIBB Usted pago : $"+IIBB);
+	
+	} else
+	{ 
 	
 	document.getElementById('precioDescuento').value=total;
 
-	
+	}
 
 
 
