@@ -11,7 +11,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 function CalcularPrecio () 
 {	 	
 	var Marca;
-	var Cantidad;
+	var Cantidad=0;
 	var precio=0;
 	var brutoApagar;
 	var porcentaje;
@@ -21,9 +21,11 @@ function CalcularPrecio ()
 
 	Cantidad=document.getElementById('Cantidad').value;
 	Marca=document.getElementById('Marca').value;
+	Cantidad=parseInt(Cantidad);
 	precio=parseInt(precio);
 	total=parseInt(total);
 	porcentaje=parseInt(porcentaje);
+	
 	
 	precio=Cantidad*35;
 
@@ -67,13 +69,16 @@ function CalcularPrecio ()
 				porcentaje=0.95;
 			}	
 		}
+
 		break;
 		
 		default:
 		if(Cantidad>=6)
 		{
-			porcentaje=0.5;
+			porcentaje=1.90;
 		}
+
+		break;
 
 	}
 
@@ -83,13 +88,15 @@ function CalcularPrecio ()
 	
 	
 	
-	IIBB=parseInt(IIBB);
+	//IIBB=parseInt(IIBB);
 	
-	if(total>120)
+	
+	/*if(total>120)
 	{
 		IIBB=total*0.10;
         alert("”IIBB Usted pago :"+IIBB);
-	}
+	}*/
+	
 	document.getElementById('precioDescuento').value=total;
 
 	
