@@ -7,34 +7,31 @@ si pagas en efectivo, tenes varias opciones, el paquete "soloDesayunos" te suma
 un 10% al descuento, si el paquete es " todoIncluido" te suma un 15% y para
 el resto de los paquetes no tiene descuento adicional.*/
 {
-  var precio;
-  var paquete;
-  var medioDePago;
-  var descuento;
+	var planetas;
+	var mensaje="";
 
-  precio=prompt("ingrese precio");
-  precio=parseInt(precio);
+	planetas=prompt("ingrese un planeta");
 
-  medioDePago=prompt("ingrese medio de pago: visa, paypal, mercado pago, efectivo,otro");
+	switch(planetas)
+	{
+		case "tierra":
+		mensaje="aca vivimos";
+		break;
 
-switch(medioDePago)
-{	
-	case "visa":
-	case "mercadopago":
-	descuento=precio*0.90;
-	alert("el precio es "+descuento);
+		case "mercurio":
+		case "venus":
+		mensaje="aca hace mas calor";
+		break;
 
-	case"paypal":
-	 
-	 switch(paquete)
-	 {
-	 	
-	 }
-
-
+		default:
+		mensaje="aca hace mas frio";
 	
-
-
+	}
+	if(mensaje!="")
+	{
+		alert(mensaje);
+	}
+	
 	
 
 
@@ -54,4 +51,4 @@ switch(medioDePago)
 
 
 
-}
+
