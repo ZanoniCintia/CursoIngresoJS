@@ -12,6 +12,6 @@ function mostrar()
 	resultado= precio-descuento;
 
 
-	document.getElementById('elPrecioFinal').value=resultado;
+	document.getElementById('elPrecioFinal').value=(resultado);
 
 }

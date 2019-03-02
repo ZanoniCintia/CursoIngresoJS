@@ -23,8 +23,20 @@ el resto de los paquetes no tiene descuento adicional.*/
 		mensaje="aca hace mas calor";
 		break;
 
-		default:
+		case "marte":
+		case "jupiter":
+		case "saturno":
+		case "urano":
+		case "neptuno":
+		case "pluton":
 		mensaje="aca hace mas frio";
+		break;
+
+		default:
+		mensaje="no es un planeta valido";
+
+
+		
 	
 	}
 	if(mensaje!="")
