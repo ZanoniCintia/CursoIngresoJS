@@ -30,6 +30,7 @@ function mostrar()
   		default:
         if(hora>19 && hora<25)
       {
+        alert("es de noche");
         alert("a dormir");
       }
       else

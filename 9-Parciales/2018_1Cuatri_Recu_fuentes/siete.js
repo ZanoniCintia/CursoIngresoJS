@@ -1,69 +1,74 @@
 function mostrar()
 {
-
 	var nota;
 	var sexo;
-	var contador=0;
-	var promedio;
-	var acumulador=0;
-	var notaMasBaja;
-	var notaBajaSexo;
+	var contadorNotaBaja=0;
+	var contadorSexoNotaBaja=0;
 	var contadorMasculino=0;
-
-	
+	var acumulador=0;
+	var contador=0;
 
 	while(contador<5)
 	{
-		contador++;
-		
-		nota=prompt("ingrese nota entre 0 y 10");
-		nota=parseInt(nota);
+		contador=contador+1;
 
-		while( nota<0 || nota>10)
+		nota=prompt("ingrese nota entre 1 y 10");
+		nota=parseInt(nota);
+		while(nota<0 || nota>10)
 		{
-			nota=prompt("ERROR, ingrese una nota valida");
-			nota=parseInt(nota);			
+			nota=prompt("ingrese nota valida");
 		}
 
-		sexo=prompt("ingrese sexo : f o m");
+		sexo=prompt("ingrese sexo");
 		while(sexo!="f" && sexo!="m")
 		{
-			sexo=prompt("ERROR, ingrese un sexo valido (f o m)");
+			sexo=prompt("ingrese sexo valido");
 		}
-
-	
-
-
 
 		if(contador==1)
 		{
-			notaMasBaja=nota;
-			notaBajaSexo=sexo;
+			contadorNotaBaja=nota;
+			contadorSexoNotaBaja=sexo;
 		}
 		else
 		{
-		 	if(nota<notaMasBaja)
-			{ 
-		 		notaMasBaja=nota;
-		 		notaBajaSexo=sexo;
-		 	}
+			if(nota<contadorNotaBaja)
+			{
+				contadorNotaBaja=nota;
+				contadorSexoNotaBaja=sexo;
+			}
 		}
 
-
-		if(sexo == "m" && nota>=6)
+		if(sexo=="M" && nota>=6)
 		{
-		contadorMasculino=contadorMasculino+1;
+			contadorMasculino=contadorMasculino+1;
 		}
 
 		acumulador=acumulador+nota;
-	
+
 	}
-
-	
-
 	promedio=acumulador/5;
 
-	alert("La nota mas baja es "+notaMasBaja+" y el sexo es "+sexo);
-	alert("el promedio es "+promedio);
+
+alert("la nota mas baja y el sexo es "+contadorNotaBaja+contadorSexoNotaBaja);
+alert("cantidad de masculinos con nota mayor a 6 es "+contadorMasculino);
+alert("promedio es "+promedio);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
+
