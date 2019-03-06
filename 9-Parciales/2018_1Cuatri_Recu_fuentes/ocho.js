@@ -2,35 +2,38 @@ function mostrar()
 {
 	var letra;
 	var numero;
-	var contadorNumerosPar=0;
-	var contadorNumerosImpar=0;
+	var contadorPares=0;
+	var contadorImpares=0;
 	var contadorCeros=0;
-	var acumuladorPositivos=0;
 	var contadorPositivos=0;
-	var numeroMayor=0;
-	var letraNumeroMayor=0;
+	var acumuladorPositivos=0;
 	var acumuladorNegativos=0;
 	var promedio;
+	var flag=false;
+	var maximoNumero=0;
+	var maximoNumeroLetra=0;
+	var minimoNumero=0;
+	var minimoNumeroLetra=0;
 	var respuesta="si";
 
-	while(respuesta=="si")
+	while(respuesta =="si")
 	{
-		letra=prompt("ingrese una letra");
+		letra=prompt("ingrese letra");
 
-		numero=prompt("ingrese un numero entre-100 y 100");
+		numero=prompt("ingrese un numero");
 		numero=parseInt(numero);
 		while(numero<-100 || numero>100)
 		{
-			numero=prompt("ingrese numero valido, entre -100 y 100");
+			numero=prompt("ERROR! ingrese numero entre -100 y 100");
 		}
 
 		if(numero%2==0)
 		{
-			contadorNumerosPar=contadorNumerosPar+1;
+			contadorPares=contadorPares+1;
 		}
 		else
 		{
-			contadorNumerosImpar=contadorNumerosImpar+1;
+			contadorImpares=contadorImpares+1;
 		}
 
 		if(numero==0)
@@ -44,34 +47,35 @@ function mostrar()
 			acumuladorPositivos=acumuladorPositivos+numero;
 		}
 		else
-		{   
+		{
 			acumuladorNegativos=acumuladorNegativos+numero;
-
 		}
-
-		
-		if(letra==1 && numero==1)
+		if(flag==false || numero>maximoNumero)
 		{
-			letraNumeroMayor=letra;
-			numeroMayor=numero;
+			maximoNumero=numero;
+			maximoNumeroLetra=letra;
 		}
-		else
+		if(flag==false || numero<minimoNumero)
 		{
-			if(numero>numeroMayor)
-			{
-				letraNumeroMayor=letra;
-				numeroMayor=numero;
-			}
+			minimoNumero=numero;
+			minimoNumeroLetra=letra;
+			flag=true;
 		}
 
-		respuesta=prompt("desea continuar? si/no");
-	}
-promedio=acumuladorPositivos/contadorPositivos;
+		respuesta=prompt("desea continuar? si/no")
+	}	
 
-document.write("numeros par "+contadorNumerosPar );
-document.write("numeros impar "+contadorNumerosImpar);
-document.write("la cantidad de ceros es "+contadorCeros);
-document.write("letra y numero mas alto "+letraNumeroMayor+numeroMayor);
-document.write("el promedio de positivos es "+promedio);
-document.write("la suma de numeros negativos es "+acumuladorNegativos);
+		promedio=acumuladorPositivos/contadorPositivos;
+
+
+		document.write("la cantidad de numeros pares es "+contadorPares+"<br>");
+		document.write("la cantidad de numeros impares es "+contadorImpares+"<br>");
+		document.write("la cantidad de ceros ingresados es "+contadorCeros+"<br>");
+		document.write("el promedio de todos los numeros es "+promedio+"<br>");
+		document.write("la suma de todos los numeros negativos es "+acumuladorNegativos+"<br>");
+		document.write("el maximo ingresado es "+maximoNumero+maximoNumeroLetra+"<br>");
+		document.write("el minimo ingresado es "+minimoNumero+minimoNumeroLetra+"<br>");
+
+
+
 }

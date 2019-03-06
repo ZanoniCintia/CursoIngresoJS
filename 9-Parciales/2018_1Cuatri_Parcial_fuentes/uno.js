@@ -1,23 +1,19 @@
 
 function mostrar()
 {
+	var largo;
+	var ancho;
+	var perimetro;
 
- var ancho;
- var largo;
- var perimetro;
+	largo=prompt("ingrese largo");
+	largo=parseInt(largo);
 
- ancho=prompt("ingrese ancho");
- largo=prompt("ingrese largo");
+	ancho=prompt("ingrese ancho");
+	ancho=parseInt(ancho);
 
- ancho=parseInt(ancho);
- largo=parseInt(largo);
+	perimetro=(ancho+largo)*2;
 
- 
-
- perimetro=(ancho+largo)*2;
-
- alert("el perimetro es "+perimetro);
-
+	alert("el perimetro es "+perimetro)
 
 
 
